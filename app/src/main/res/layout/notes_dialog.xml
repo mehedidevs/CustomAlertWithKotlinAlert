@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo" />
+
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:text="This Is Title"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.Material3.HeadlineMedium"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:text=" I was thinking to write a re-usable Alert Dialog classes in Kotlin to be used across app, as a result "
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:layout_margin="16dp"
+            android:id="@+id/close_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:text="Close"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_margin="16dp"
+            android:id="@+id/done_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Done"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
