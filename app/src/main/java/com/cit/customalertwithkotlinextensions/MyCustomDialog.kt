@@ -18,10 +18,10 @@ class MyCustomDialog(private val context: Context, var title: String) : BaseDial
 
 
     //  done icon
-    private val doneIcon: Button = dialogView.findViewById(R.id.done_icon)
+    private val doneIcon: Button = dialogView.findViewById(R.id.yesBtn)
 
     //  close icon
-    private val closeIcon: Button = dialogView.findViewById(R.id.close_icon)
+    private val closeIcon: Button = dialogView.findViewById(R.id.noBtn)
     private val titleTv: TextView = dialogView.findViewById<TextView?>(R.id.titleTv)
 
 

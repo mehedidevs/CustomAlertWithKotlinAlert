@@ -14,6 +14,7 @@
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/topIcon"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
@@ -42,18 +43,18 @@
 
 
         <Button
-            android:layout_margin="16dp"
-            android:id="@+id/close_icon"
+            android:id="@+id/yesBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-             android:text="Close"
+            android:layout_margin="16dp"
+            android:text="Close"
             android:textAllCaps="false" />
 
         <Button
-            android:layout_margin="16dp"
-            android:id="@+id/done_icon"
+            android:id="@+id/noBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="16dp"
 
             android:text="Done"
             android:textAllCaps="false" />

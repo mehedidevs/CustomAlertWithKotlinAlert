@@ -2,6 +2,7 @@ package com.cit.customalertwithkotlinextensions
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -15,12 +16,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         findViewById<Button>(R.id.showAlertBtn).setOnClickListener {
-            createDialog(this,
-                func1 = {
+            showDialog(this,"Procced", "No", R.drawable.ic_baseline_adb_24,
+                positiveFun = {
                     Toast.makeText(this@MainActivity, "Cliked Yes", Toast.LENGTH_LONG).show()
 
-                }, func2 = {
+                }, negativeFun = {
                     Toast.makeText(this@MainActivity, "Cliked NO", Toast.LENGTH_LONG).show()
+                }, neutralFUn = {
+
                 })
 
         }
@@ -29,6 +32,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showDialog() {
+
         if (notesDialog == null)
 
             notesDialog = showNotesAlertDialog {
